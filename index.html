@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>ImageTracking Test</title>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script type="application/javascript" defer> </script>
   </head>
   <body>
-    <img id ="imgMarker" src ="/hiroImage.png" alt ="markert" style ="display: none;">
-    <div id ="mainScene"></div>
-    <script type="module" src="/main.js"></script>
+    <video id="video" style="display:none" loop>
+      <source src="/sample-video.mp4" type="video/mp4">
+  </video>
+    <img id ="imgMarker" src ="/flower.jpeg" alt ="markert" style ="display: none;">
+      <canvas class="webgl"></canvas>
+      <div id='console-ui'></div>
+  </body>
+  <!-- <body>
+    <canvas class="webgl"></canvas>
+    <div id='console-ui'></div>
+</body> -->
+    <script type="module" src="/imageTracking.js"></script>
   </body>
 </html>
